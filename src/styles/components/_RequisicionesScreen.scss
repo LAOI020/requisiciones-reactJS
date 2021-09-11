@@ -1,0 +1,50 @@
+
+.requisicion-container {
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: darken($color: white, $amount: 20);
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    transition: .5s ease;
+
+    &:hover {
+        background-color: orange;
+    }
+
+    h3 {
+        justify-self: center;
+        margin: 0;
+    }
+}
+
+.dates-container {
+    h4 {
+        margin: 0.4rem 0 0.4rem 0;
+    }
+}
+
+.status-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+
+    h3 {
+        text-align: center;
+        align-self: center;
+        border-radius: 1rem;
+        padding: 0.2rem;
+    }
+
+    div {
+        justify-self: end;
+        align-self: center;
+
+        h4 {
+            color: green;
+            margin: 0.4rem 0 0.4rem 0;
+        }
+    }
+}

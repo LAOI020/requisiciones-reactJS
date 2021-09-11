@@ -1,0 +1,42 @@
+
+:root {
+    --widthInputLogin: 90vw;
+    --rightSearchBar: 0;
+    --rightFAT: 0.5rem;
+    --leftProductCanceled: 5px;
+    --widthInfoCategory: 100vw;
+    --columnsProductContainer: 0.2fr 0.8fr;
+
+    @media screen and (max-width: 1049px) {
+        --widthInputLogin: 90vw;
+        --rightSearchBar: 0;
+        --rightFAT: 0.5rem;
+        --leftProductCanceled: 5px;
+        --widthInfoCategory: 100vw;
+        --columnsProductContainer: 0.2fr 0.8fr;
+
+        select, textarea, input {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
+        // font-size: 18px;
+        --widthInputLogin: 30vw;
+        --rightSearchBar: 63%;
+        --rightFAT: 67%;
+        --leftProductCanceled: 65%;
+        --widthInfoCategory: 36vw;
+        // --columnsProductContainer: 0.15fr 0.3fr 0.2fr 0.15fr 0.2fr;
+        --columnsProductContainer: auto auto auto auto auto;
+    }
+}
+
+@import './base';
+
+@import './components/LoginScreen';
+@import './components/WelcomeScreen';
+@import './components/RequisicionesScreen';
+@import './components/ProductsRequisicion';
+@import './components/MakeInventoryScreen';
+@import './components/CedisRequisiciones';

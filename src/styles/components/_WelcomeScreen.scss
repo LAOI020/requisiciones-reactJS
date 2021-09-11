@@ -1,0 +1,208 @@
+
+.category-search-bar {
+    position: fixed;
+    top: 0.5rem;
+    right: var(--rightSearchBar);
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0.5rem;
+    height: 2.9rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+
+    transition: .2s ease;
+
+    &:hover {
+        border: 3px solid orange;
+    }
+
+    input {
+        margin-left: 5px;
+        font-size: 1.1rem;
+        width: 90%;
+        border-radius: 1rem;
+        border: none;
+        
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .icon-clear-input {
+        cursor: pointer;
+        color: darken($color: red, $amount: 20);
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        align-self: center;
+    }
+}
+
+.Fat-button {
+    position: fixed;
+    bottom: 0.5rem;
+    right: var(--rightFAT);
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 0.6rem;
+}
+.Item-fat-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 40%;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+}
+
+.category-container {
+
+    h3 {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 1rem 0.5rem 1rem 0.5rem;
+        border-radius: 1rem;
+        border: 2px solid black;
+
+        transition: .3s ease;
+
+        &:hover {
+            font-size: 21px;
+            background-color: darken($color: red, $amount: 10) !important;
+        }
+    }
+}
+
+.product-category-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0.85rem;
+}
+.product-category-row1 {
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+
+    h5 {
+        background-color: white;
+        border: 1px solid black;
+        margin: 0;
+        padding: 3px;
+    }
+}
+.product-category-row2 {
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 0.3fr;
+
+    h5 {
+        background-color: white;
+        border: 1px solid black;
+        margin: 0;
+        padding: 3px;
+    }
+}
+
+.info-category-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: var(--widthInfoCategory);
+    height: 17%;
+    background-color: transparent;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    justify-content: center;
+    
+    div {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 0.3fr 0.7fr;
+        padding: 0 0.5rem 0 0.5rem;
+        
+        h5 {
+            color: white;
+            background-color: blue;
+            border: 1px solid white;
+            margin: 0;
+            padding: 3px;
+        }
+    }
+}
+
+
+
+//WELCOME DESKTOP
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+.main-container-desktop {
+    display: grid;
+    grid-template-columns: 0.37fr 0.26fr 0.37fr;
+    height: 100vh;
+}
+
+
+.container-product-desktop {
+    display: grid;
+    grid-template-columns: 0.3fr 0.175fr 0.175fr 0.175fr 0.175fr;
+    margin: 0.85rem;
+
+    h5 {
+        background-color: white;
+        border: 1px solid black;
+        margin: 0;
+        padding: 3px;
+    }
+}
+
+.main-container-desktop-cedis {
+    display: grid;
+    grid-template-columns: 0.32fr 0.32fr 0.36fr;
+    height: 100vh;
+}
+
+.Fat-button-make-inventory-desktop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 0.6rem;
+
+    transition: .3s ease;
+
+    &:hover {
+        background-color: darken($color: blue, $amount: 25);
+    }
+}
+.Fat-button-logout-desktop {
+    cursor: pointer;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.6rem;
+
+    transition: .3s ease;
+    
+    &:hover {
+        background-color: darken($color: red, $amount: 25);
+    }
+}

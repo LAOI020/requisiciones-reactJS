@@ -1,0 +1,68 @@
+
+.info-product-canceled-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0.5rem;
+    left: var(--leftProductCanceled);
+    right: 5px;
+    justify-content: center;
+    background-color: darken($color: red, $amount: 8);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    h5 {
+        border: 1px solid white;
+        margin: 0;
+        padding: 3px;
+    }
+}
+.info-product-canceled-grid {
+    display: grid;
+    grid-template-columns: 0.3fr 0.2fr 0.5fr;
+
+    h5 {
+        padding: 3px;
+        border: 1px solid white;
+    }
+}
+
+.product-container {
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0.6rem;
+}
+
+.product-container-row1 {
+    display: grid;
+    grid-template-columns: var(--columnsProductContainer);
+
+    h5 {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid black;
+    }
+}
+
+.product-container-row2 {
+    display: grid;
+    grid-template-columns: 0.32fr 0.34fr 0.34fr;
+
+    h5 {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid black;
+    }
+}
+
+.product-container-row-icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    input {
+        width: 50%;
+        padding: 2px;
+    }
+}

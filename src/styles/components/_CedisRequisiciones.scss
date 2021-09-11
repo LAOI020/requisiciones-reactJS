@@ -1,0 +1,87 @@
+
+.business-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: transparent;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    
+    h4 {
+        cursor: pointer;
+        margin: 0;
+
+        transition: .3s ease;
+
+        &:hover {
+            font-size: 1.2em;
+        }
+    }
+    
+    div {
+        cursor: pointer;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 0.3fr 0.7fr;
+        margin: 0 0.5rem 0 0.5rem;
+        border-radius: 0.5rem;
+        text-align: start;
+        background-color: blue;
+        
+        transition: .3s ease;
+
+        &:hover {
+            background-color: darken($color: blue, $amount: 20);
+        }
+        
+        h5 {
+            font-size: 1rem;
+            color: white;
+            border: 1px solid white;
+            margin: 0;
+            padding: 3px;
+            
+        }
+    }
+}
+
+.icon-excel {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    padding: 3px;
+    border-radius: 8px;
+    color: white;
+    background-color: green;
+
+    transition: .3s ease;
+    
+    &:hover {
+        background-color: darken($color: green, $amount: 20);
+    }
+}
+
+.icon-check-product-cedis {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.icon-logout { 
+    position: fixed;
+    top: 4px;
+    right: 8px;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}

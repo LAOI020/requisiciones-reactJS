@@ -1,0 +1,66 @@
+
+.divider-container {
+    padding: 1rem 5px 1rem 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.check-inventory-FAT {
+    cursor: pointer;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    padding: 0.6rem;
+
+    transition: .5s ease;
+
+    &:hover {
+        background-color: darken($color: green, $amount: 15);
+    }
+}
+
+.inventory-product-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0.7rem;
+    background-color: gray;
+}
+.inventory-product-container-row1 {
+
+    h5 {
+        margin: 0;
+        padding: 3px;
+        border: 1px solid black;
+    }
+}
+.inventory-product-container-row2 {
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 0.3fr;
+
+    h5 {
+        margin: 0;
+        padding: 3px;
+        border: 1px solid black;
+
+    }
+}
+.form-inventory-product-container {
+    height: 1.5rem;
+    align-self: center;
+    margin-right: 6px;
+    
+    input {
+        width: 85%;
+        height: 1.5rem;
+        border-radius: 6px;
+        border: 1px solid black;
+
+        &:focus {
+            border: 1px solid orange;
+        }
+    }
+}
